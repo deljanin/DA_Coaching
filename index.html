@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="skript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+  </head>
+<body>
+  <!--NAV START-->
+  <header id="mainSec">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="myna" >
+      <a class="navbar-brand" href="index.html">
+        <img src="imgaes/lolgotmp.png" class="navimg" alt="Good Koper Fitness" >
+      </a>
+      <button class="btn mybuttons ml-auto mr-2 homebutton"><a class="homebutton" href="index.html">HOME</a></button>
+      <button class="navbar-toggler" onclick="changeBgColorToBlack()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent"><!--Flex grow, dont expand if u can-->
+          <ul class="navbar-nav text-right">
+              <!--
+                <li class="nav-item">
+                <a class="nav-link " href="#">PROGRAMS & COACHING</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">PERSONAL GYM</a>
+              </li>
+              -->
+              <li class="nav-item ">
+                <a class="nav-link" href="forum.html">FORUM</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>       
+          </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="imgaes/eng.png" class="lngImg px-0 my-1">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"><img src="imgaes/slo.png" class="lngImg"></a>
+        </div>
+      </div>
+    </nav>
+
+    <!--NAV END-->
+
+    <div class="container-fluid" >  
+        <div class="d-flex justify-content-center " id="slogan"><span id="Slogan">NO PAIN. NO GAIN.</span></div>
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center mt-3">
+          <!--Grid column-->
+          <div class=" col-md-7">
+            <div class="embed-responsive embed-responsive-16by9 hoverable">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CYDP_8UTAus?list=RDCYDP_8UTAus" style="height: 101%"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div><!--Grid column-->
+        <!--Grid row-->          
+      <div class="row d-flex justify-content-center mt-5">
+        <form action="index.html" method="GET">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <button class="btn mybuttons" id="joinNowBtn">JOIN NOW!</button>
+          </div>
+        </form>
+    </div>
+  </header>
+    <!--END OF CLICK ME AREA-->
+
+    <!--START OF PROGRAMS AREA-->
+  <div class="d-flex container-fluid justify-content-center ">
+    <span id="ProgramsText">> Programs <</span>
+  </div>
+  <div style=" width: 90%; margin: 0 auto 0 auto;">
+    <div class="card-deck">
+      
+        <div class="card">
+          <img class="card-img-top" src="imgaes/bicepsPump.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Three Month Cut</h4>
+            <p class="card-text">Do you want to get lean and shredded? Then this program is perfect for you, because in only 2 months you will look like a completely new person.</p>
+          </div>
+          <div class="card-footer" style="background-color: black">
+            <a href="#" class="btn mybuttons">See Program</a>
+          </div>
+        </div>
+  
+      <div class="card">
+        <img src="imgaes/img1.jpg" id="midimg" class="rounded" alt="Responsive image">
+      </div>
+  
+        <div class="card">
+          <img class="card-img-top" src="imgaes/legs.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Six Month Bulk</h4>
+            <p class="card-text">This program will take you on a 6 month journey of continuous progress and clean muscle growth. Let's start this bulk together!</p>
+          </div>
+          <div class="card-footer" style="background-color: black">
+            <a href="#" class="btn mybuttons">See Program</a>
+          </div>        
+        </div>
+      
+    </div>
+  </div>
+    <!--END OF PROGRAMS AREA-->
+
+    <!--START OF FOOTER-->
+   
+    <footer class="mainfooter justify-content-center" role="contentinfo">
+      <div class="d-flex justify-content-center">
+        <ul class="list-unstyled list-inline footerText">
+          <li class="list-inline-item">
+            <button type="button" class="btn footerImg text-white p-0 mb-1 fa fa-phone-square" data-container="body"
+            data-toggle="popover" data-placement="right"  title="Phone number"
+            data-content="+386 30 621 336">            
+            </button>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="footerImg fa fa-instagram"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="footerImg fa fa-facebook"></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="footerImg fa fa-youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="row mx-0">
+        <div class="col-sm-12 copy">
+          <p class="text-center m-0">&copy; Copyright 2020 - D&A Coaching.  All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--END OF FOOTER-->
+    </body>
+    </html>
+    
+    
+    

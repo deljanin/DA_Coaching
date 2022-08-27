@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    transition: all 1s;
+}
+.homebutton{
+    text-decoration: none;
+    color: black;
+}
+.homebutton:hover{
+    text-decoration: none;
+    color: black;
+}
+.navbar.myactive {
+    background: #000000;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.lngImg{
+    width: 21px;
+    height: auto;
+}
+.dropdown-menu{
+    background-color: transparent !important;
+    padding: 0px;
+    border: 0px !important;
+}
+.dropdown-menu::after{
+    border: 0;
+}
+.dropdown-item{
+    padding: 2px 13px !important;
+}
+.dropdown-item:hover{
+    padding: 2px 13px !important;
+    background-color: transparent !important;
+}
+.mybuttons{
+    background-color: yellow;
+    font-weight: bold !important;
+    border: none !important;
+}
+.navimg{
+    width: 150px;
+}
+*{
+    margin: 0;
+
+}
+#mainSec{
+    background: url(imgaes/bckg.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+#Slogan{
+    margin-top: 100px;
+}
+#slogan{
+    font-family: 'Permanent Marker', cursive;
+    color: yellow;
+    font-size: 1.5em;
+}
+#joinNowBtn{
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+#ProgramsText{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 2vh 0;
+
+}
+.bgc-eggshell{
+    background-color: #f5f5f5;
+}
+#ProgramImagesParentFlex{
+    height: 100vh;
+}
+#midimg{
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    background-color: black;
+    color: white;
+}
+.footerImg:hover {
+    color: yellow !important;
+}
+.footerText{
+    font-size: 2em;
+    margin: 0;
+}
+
+footer {
+    background: black;
+    color: white;
+    margin-top:100px;
+  }
+  
+  footer a {
+    color: white;
+    font-size: 14px;
+    transition-duration: 0.2s;
+  }
+  
+  footer a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid yellow;
+  }
+
+
+
+
+
+
+
+
+/* PAGE CONTACT*/
+#mainSecContact{
+    background: url(imgaes/bckg.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+#contactMain{
+    margin-top: 12vh;
+}
+.radiLjubimTe{
+    font-size: 2em;
+    
+}
+.radiLjubimTe :hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (min-width: 357px){
+    #joinNowBtn{
+        margin-top: 0vh;
+        margin-left: 1vw;
+    }
+   
+}
+@media (min-width: 576px) { 
+    #joinNowBtn{
+        margin-top: 0vh;
+        margin-left: 1vw;
+    }
+    #mainSec{
+        background: url(imgaes/bckg.jpg) no-repeat center center fixed; 
+        background-size: cover;
+        height: 105vh;
+        width: 100%;
+    }
+    #slogan{
+        font-size: 3em;
+    }
+    .navimg{
+        width: 300px;
+    }#ProgramsText{
+        color: black;
+        font-size: 3em;
+        font-weight: 800;
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+    .radiLjubimTe{
+        font-size: 1em;
+    }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #joinNowBtn{
+        margin-top: 0;
+        margin-left: 0.5vw;
+    }
+    .radiLjubimTe{
+        font-size: 2em;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    #slogan{
+        font-size: 5em;
+    }
+    .contactIcons{
+        color: black;
+        text-decoration: none;
+        font-size: 35pt !important;
+    }
+}

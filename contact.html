@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="skript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+
+</head>
+<body  id="mainSecContact">
+    <!--NAV START-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="myna" >
+      <a class="navbar-brand" href="index.html">
+        <img src="imgaes/lolgotmp.png" class="navimg" alt="Good Koper Fitness" >
+      </a>
+      <button class="btn mybuttons ml-auto mr-2 homebutton"><a class="homebutton" href="index.html">HOME</a></button>
+      <button class="navbar-toggler" onclick="changeBgColorToBlack()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent"><!--Flex grow, dont expand if u can-->
+          <ul class="navbar-nav text-right">
+              <!--
+                <li class="nav-item">
+                <a class="nav-link " href="#">PROGRAMS & COACHING</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">PERSONAL GYM</a>
+              </li>
+              -->
+              <li class="nav-item ">
+                <a class="nav-link" href="forum.html">FORUM</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>       
+          </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="imgaes/eng.png" class="lngImg px-0 my-1">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"><img src="imgaes/slo.png" class="lngImg"></a>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <!--NAV END-->
+
+        
+    <!--START OF Contact AREA-->
+    <div class="row mx-0 justify-content-center"  id="contactMain"> 
+        <div class="d-flex bg-white col-md-8 justify-content-center " style="border-bottom: 2px solid black !important">
+            <span id="ProgramsText">> Contacts <</span>
+        </div>
+        <div class="col-8 col-xl-5 p-5 bg-white" style="border-bottom: 2px solid black !important">
+            <form class="mt-5" action="contact.html" method="GET"">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" class="form-control" required="required">
+                            <option value="na" selected="">Choose One:</option>
+                            <option value="service">General Customer Service</option>
+                            <option value="suggestions">Suggestions</option>
+                            <option value="product">Product Support</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                            placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn mybuttons pull-right" id="btnContactUs" style="border: 1px solid black !important;">Send Message</button>
+                </div>
+            </div>
+            </form>
+            
+                
+        </div>
+        <div class="col-8 col-xl-3 p-5 bg-white" style="border-bottom: 2px solid black !important">
+            <img src="imgaes/bicepsPump.jpg" class="img-fluid">
+        </div>
+    </div>
+    <div class="row mx-0 mt-0 justify-content-center" id="contactMain"> 
+        <div class="col-8 p-5 bg-white"><!--OVDJE ALOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo-->
+            <div class="row radiLjubimTe">
+                <div class="col-8 col-lg-6">
+                    <span class="fa fa-phone-square" style="margin-right: 3px;"></span><span> +386 30 621 336</span>
+                </div>
+                <div class="col-8 col-lg-6">
+                    <span class="fa fa-instagram "></span><a href="tamonegde" style="color: black;"> @davidkerezovic</a>
+                </div>
+                <div class="col-8 col-lg-6">
+                    <span class="fa fa-facebook" style="margin-right: 9px;"></span><a href="tamonegde" style="color: black;"> @davidkerezovic</a>
+                </div>
+                <div class="col-8 col-lg-6">
+                    <span class="fa fa-youtube "></span><a href="tamonegde" style="color: black;"> @davidkerezovic</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END OF Contact AREA-->
+
+
+      <!--START OF FOOTER-->
+   
+      <footer class="mainfooter justify-content-center" role="contentinfo">
+        <div class="d-flex justify-content-center">
+          <ul class="list-unstyled list-inline footerText">
+            <li class="list-inline-item">
+              <button type="button" class="btn footerImg text-white p-0 mb-1 fa fa-phone-square" data-container="body"
+              data-toggle="popover" data-placement="right"  title="Phone number"
+              data-content="+386 30 621 336">
+              </button>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="footerImg fa fa-instagram"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="footerImg fa fa-facebook"></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="footerImg fa fa-youtube"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row mx-0">
+          <div class="col-sm-12 copy">
+            <p class="text-center m-0">&copy; Copyright 2020 - D&A Coaching.  All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+  
+      <!--END OF FOOTER-->
+</body>
+</html>
